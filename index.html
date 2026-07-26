@@ -3,48 +3,136 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>MAFUYU SHOP</title>
+    <title>GIVEN SHOP</title>
 
-    <link rel="stylesheet" href="css/mafuyu.css">
+    <link rel="stylesheet" href="css/GIVEN.css">
     <link href="https://fonts.googleapis.com/css2?family=Mochiy+Pop+One&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Kanit:wght@400;700&display=swap" rel="stylesheet">
 
-    <style>
+    <style>*{box-sizing: border-box;}
         header{
             background-color: rgb(255, 141, 112);
-            padding: 5px;
+            padding: 20px;
             text-align: center;
             font-size: 30px;
             color: aliceblue;
             font-style: normal;
         }
         nav{
+            float: left;
             background-color: rgb(185, 101, 80);
             padding: 5px;
             text-align: left;
             font-size: 20px;
             color: aliceblue;
             font-style: normal;
+            width: 100%;
+            overflow: hidden;
         }
         nav ul{
-            list-style:circle;
+            list-style:none;
+            
+        }
+        aside{
+            float: left;
+            background-color: rgb(100, 37, 21);
+            padding: 20px;
+            text-align: left;
+            font-size: 20px;
+            color: aliceblue;
+            width: 17%;
+            height: 444px;
+            
+        }
+        article{
+            float: left;
+            padding: 20px;
+            width: 83%;
+            background-color: #ffd9d2;
+            
+        }
+        section::after {
+            content: "";
+            display: table;
+            clear: both;
+        }
+        footer{
+            float: left;
+            padding: 20px;
+            width: 100%;
+            background-color: #240a05;
+            height: 250px;
+        }
+
+        @media (max-width: 600px){
+            aside, article {
+                width: 100%;
+                height: auto;
+            }
         }
     </style>
 </head>
 <body>
     <header>
-        <img src="image/index/mafuyuchibi_00.png" width="100" height="150">
+        <img src="image/index/LOGO_GIVEN00.png" width="100" height="150">
         <h2> 
-            MAFUYU SHOP
+            GIVEN SHOP
         </h2>
 
     </header>
     <nav>
         <ul>
         <li><a href="index.html">หน้าแรก</a></li>
-        
+        <li><a href="#">สินค้าทั้งหมด</a></li>
+        <li><a href="#">ตะกร้าสินค้า</a></li>
+        <li><a href="#">ยินยันการสั่งสินค้า</a></li>
+        <li><a href="#">ติดต่อเรา</a></li>
+        </ul>
     </nav>
+<section>
     <aside>
-        <h3></h3>
+        <h3>หมวดหมู่สินค้า</h3>
+            <ul>
+                <li><a href="#">Figures</a></li>
+                <li><a href="#">Plush Dolls</a></li>
+                <li><a href="#">Keychains</a></li>
+                <li><a href="#">Posters</a></li>
+                <li><a href="#">Manga</a></li>
+            </ul>
     </aside>
+    <article>
+        <div class="product-card">
+            <img src="image/index/MAFUYUfigureOrder1.jpg" width="250" height="250">
+            <h3>Nendoroid Mafuyu Sato</h3>
+            <h4>Price 1,660.00 ฿</h4>
+            <a href="#">ดูรายละเอียด</a>
+        </div>
+
+        <div class="product-card">
+            <img src="image/index/GIVEN_manga01.png" width="250" height="250">
+            <h3>Given Vol.1</h3>
+            <h4>Price 118 ฿</h4>
+            <a href="#">ดูรายละเอียด</a>
+        </div>
+    </article>
+</section>
+
+<footer>
+    <h2>CONTACT</h2>
+    <div class="contact-row">
+        <img src="image/index/Instagram_icon.png" class="stack-img" width="100" height="100">
+        <a href="https://www.instagram.com/vii_kak1a/">INSTAGRAM</a>
+    </div>
+        <div class="contact-row">
+        <img src="image/index/facebooklogo.webp" class="stack-img" width="100" height="100">
+        <a href="https://www.facebook.com/kakla.natsuko">FACEBOOK</a>
+    </div>
+    <div class="contact-row">
+        <img src="image/index/copyright-symbol-white.png" class="stack-img" width="30" height="30">
+        <h4>GIVEN SHOP</h4>
+
+    </div>
+</footer>
+
 </body>
 </html>
