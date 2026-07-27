@@ -41,8 +41,22 @@ nav ul li a:hover {
     background-color: #3a1a10;
 }
 
+section{
+    display: flex;
+    align-items: stretch;
+    width: 100%;
+    overflow: hidden;
+}
+
 aside{
+    float: left;
     clear: both;
+    padding: 20px;
+    width: 17%;
+    flex-shrink: 0;
+    padding-bottom: 2000px;
+    margin-bottom: -2000px;
+    background-color: rgb(100, 37, 21);
 }
 
 aside a{
@@ -68,8 +82,11 @@ article{
     display: flex;
     flex-wrap: wrap;
     align-items: flex-start;
-    gap: 10px;
+    gap: 20px;
     padding: 20px;
+    width: 83%;
+    min-width: 0;
+    background-color: #ffd9d2;
 }
 
 article h3{
@@ -110,7 +127,10 @@ footer{
     clear: both;
     float: left;
     padding: 15px;
-    width: 100px;
+    width: 100%;
+    max-width: 100%;
+    box-sizing: border-box;
+    overflow: hidden;
 }
 
 footer h2{
@@ -125,6 +145,7 @@ footer h2{
     display: flex;
     align-items: center;
     margin: 10px 20px;
+    max-width: 100%;
 }
 
 footer img.stack-img{
@@ -149,6 +170,6 @@ footer a:hover{
 footer h4{
     color: white;
     font-size: 10px;
-    font-family: "Mochiy Pop One", sans-serif;
+    font-family: sans-serif;
     text-decoration: none;
 }
