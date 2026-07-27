@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>GIVEN SHOP</title>
 
-    <link rel="stylesheet" href="css/GIVEN.css">
+    <link rel="stylesheet" href="css/style.css">
     <link href="https://fonts.googleapis.com/css2?family=Mochiy+Pop+One&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Kanit:wght@400;700&display=swap" rel="stylesheet">
 
@@ -33,6 +33,33 @@
             list-style:none;
             
         }
+
+        
+        article{
+            float: left;
+            padding: 20px;
+            width: 83%;
+            background-color: #ffd9d2;
+            gap: 20px;        
+        }
+        article h5{
+            font-family: "Kanit", sans-serif;
+            font-size: 20px;
+            text-align: left;
+            margin: 5px;
+        }
+
+        
+        section{
+            width: 100%;
+        }
+
+        section::after{
+            content: "";
+            display: table;
+            clear: both;
+        }
+
         aside{
             float: left;
             background-color: rgb(100, 37, 21);
@@ -40,27 +67,18 @@
             font-size: 20px;
             color: aliceblue;
             width: 17%;
-            
+            min-height: 632px;            
         }
-        article{
+
+        .product-card{
             float: left;
-            padding: 20px;
-            width: 83%;
-            background-color: #ffd9d2;
-            
-        }
-        section::after {
-            content: "";
-            display: block;
-            clear: both;
-        }
-        footer{
-            clear: both;
-            padding: 20px;
-            width: 100%;
-            background-color: #240a05;
-            height: 250px;
-        }
+            border: 1px solid #acacac;
+            padding: 15px;
+            margin: 10px;
+            text-align: center;
+            width: 280px;
+            background-color: rgb(255, 255, 255);
+}
 
         @media (max-width: 600px){
             aside, article {
@@ -81,8 +99,8 @@
     <nav>
         <ul>
         <li><a href="index.html">หน้าแรก</a></li>
-        <li><a href="#">สินค้าทั้งหมด</a></li>
-        <li><a href="#">ตะกร้าสินค้า</a></li>
+        <li><a href="products.html">สินค้าทั้งหมด</a></li>
+        <li><a href="cart.html">ตะกร้าสินค้า</a></li>
         <li><a href="#">ยินยันการสั่งสินค้า</a></li>
         <li><a href="#">ติดต่อเรา</a></li>
         </ul>
@@ -99,18 +117,15 @@
             </ul>
     </aside>
     <article>
+        <h3>Welcome to given shop!</h3>
+        <h4>Merchandise exclusively for "Given" for all "Given" fans. I hope you enjoy it and find happiness!</h4>
+        <h5>สินค้าแนะนำ</h5>
         <div class="product-card">
             <img src="image/index/MAFUYUfigureOrder1.jpg" width="250" height="250">
             <h3>Nendoroid Mafuyu Sato</h3>
             <h4>Price 1,660.00 ฿</h4>
-            <a href="#">ดูรายละเอียด</a>
-        </div>
-
-        <div class="product-card">
-            <img src="image/index/GIVEN_manga01.png" width="250" height="250">
-            <h3>Given Vol.1</h3>
-            <h4>Price 118.00 ฿</h4>
-            <a href="#">ดูรายละเอียด</a>
+            <a href="product-detail-1.html">ดูรายละเอียด</a>
+            <a href="cart.html" class="cart-btn"><button>เพิ่มลงตะกร้า</button></a>
         </div>
 
         <div class="product-card">
@@ -118,12 +133,14 @@
             <h3>Gantungan Given Mafuyu Sato</h3>
             <h4>Price 45.00 ฿</h4>
             <a href="#">ดูรายละเอียด</a>
+            <a href="#" class="cart-btn"><button>เพิ่มลงตะกร้า</button></a>
         </div>
         <div class="product-card">
-            <img src="image/index/Given dolls Yuki Yohida01.webp" width="250" height="250">
-            <h3>Gantungan Given Yuki Yoshida</h3>
+            <img src="image/index/YUKI YOSHIDA.jpg" width="250" height="250">
+            <h3>Doll Given Yuki Yoshida</h3>
             <h4>Price 1,397.63 ฿</h4>
             <a href="#">ดูรายละเอียด</a>
+            <a href="#" class="cart-btn"><button>เพิ่มลงตะกร้า</button></a>
         </div>
     </article>
 </section>
