@@ -1,0 +1,256 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GIVEN SHOP</title>
+
+    <link rel="stylesheet" href="css/style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Mochiy+Pop+One&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Kanit:wght@400;700&display=swap" rel="stylesheet">
+
+    <style>*{box-sizing: border-box;}
+        header{
+            background-color: rgb(255, 141, 112);
+            padding: 20px;
+            text-align: center;
+            font-size: 30px;
+            color: aliceblue;
+            font-style: normal;
+        }
+        nav{
+            float: left;
+            background-color: rgb(185, 101, 80);
+            padding: 5px;
+            text-align: left;
+            font-size: 20px;
+            color: aliceblue;
+            font-style: normal;
+            width: 100%;
+            overflow: hidden;
+        }
+        nav ul{
+            list-style:none;
+            
+        }
+        
+                section{
+            width: 100%;
+        }
+
+        section::after{
+            content: "";
+            display: table;
+            clear: both;
+        }
+
+        aside{
+            float: left;
+            background-color: rgb(100, 37, 21);
+            padding: 20px;
+            font-size: 20px;
+            color: aliceblue;
+            width: 17%;
+            min-height: 505px;            
+        }
+        .product-card{
+            float: left;
+            border: 1px solid #acacac;
+            padding: 15px;
+            margin: 15px;
+            text-align: center;
+            width: 1500px;
+            background-color: rgb(255, 255, 255);
+        }
+
+
+        article{
+            float: left;
+            padding: 20px;
+            width: 83%;
+            background-color: #ffd9d2;
+            gap: 20px;        
+        }
+
+
+        article a{
+            color: rgb(114, 114, 114);
+            font-size: 30px;
+            font-family: "Mochiy Pop One", sans-serif;
+            text-decoration: none;
+        }
+        
+        article h2{
+            font-family: "Kanit", sans-serif;
+            text-align: center;
+        }
+        
+        article h3{
+            font-family: "Kanit", sans-serif;
+        }
+
+        article p{
+            font-family: "kanit", sans-serif;
+        }
+
+        article a:hover{
+            background-color: #d1d1d1;
+        }
+
+        article table th{
+            font-family: "Kanit", sans-serif;
+        }
+
+        article table td{
+            font-family: "Mochiy Pop One", sans-serif;
+        }
+
+        .order-box{
+            font-family: "Kanit", sans-serif;
+        }
+        
+        .cart-table{
+            width:100%;
+            border-collapse:collapse;
+        }
+
+        .cart-table th{
+            border:2px solid rgb(185,101,80);
+            padding:12px;
+            text-align:center;
+            font-family: "Kanit" , sans-serif;
+
+        }
+        .cart-table td{
+            border:2px solid rgb(185,101,80);
+            padding:12px;
+            text-align:center;
+            font-family: "Mochiy Pop One" , sans-serif;
+        }
+
+        .cart-table th{
+            color:rgb(0, 0, 0);
+        }
+
+        .total{
+            font-weight:bold;
+        }
+        .total td{
+            font-family: "Mochiy Pop One", sans-serif;
+        }
+
+        .total th{
+            font-family: "Kanit" , sans-serif;
+        }
+
+        .btn-confirm{
+            display:inline-block;
+            background:rgb(255,141,112);
+            color:white;
+            padding:10px 20px;
+            border-radius:20px;
+            text-decoration:none;
+            font-size: 20px;
+            font-family: "Kanit", sans-serif;
+        }
+
+        .btn-confirm:hover{
+            background:rgb(185,101,80);
+        }
+
+        @media (max-width: 600px){
+            aside, article {
+                width: 100%;
+                height: auto;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <img src="image/index/LOGO_GIVEN00.png" width="100" height="150">
+        <h2> 
+            GIVEN SHOP
+        </h2>
+
+    </header>
+    <nav>
+        <ul>
+        <li><a href="index.html">หน้าแรก</a></li>
+        <li><a href="products.html">สินค้าทั้งหมด</a></li>
+        <li><a href="cart.html">ตะกร้าสินค้า</a></li>
+        <li><a href="confirm.html">ยินยันการสั่งสินค้า</a></li>
+        <li><a href="#contact">ติดต่อเรา</a></li>
+        </ul>
+    </nav>
+<section>
+    <aside>
+        <h3>หมวดหมู่สินค้า</h3>
+            <ul>
+                <li><a href="products.html#figures">Figures</a></li>
+                <li><a href="products.html#plush dolls">Plush Dolls</a></li>
+                <li><a href="products.html#keychains">Keychains</a></li>
+                <li><a href="products.html#poster">Posters</a></li>
+                <li><a href="products.html#manga">Manga</a></li>
+            </ul>
+    </aside>
+    <article>
+            <h2>ยืนยันการสั่งซื้อ</h2>
+
+        <div class="order-box">
+            <p><strong>เลขที่คำสั่งซื้อ :</strong> GS-20260728-0001</p>
+            <p><strong>วันที่สั่งซื้อ :</strong> 28/07/2026</p>
+        </div>
+
+    <table class="cart-table">
+
+        <tr>
+            <th>สินค้า</th>
+            <th>จำนวน</th>
+            <th>ราคา</th>
+        </tr>
+
+        <tr>
+            <td>Nendoroid Mafuyu Sato</td>
+            <td>1</td>
+            <td>1,660 ฿</td>
+        </tr>
+
+        <tr>
+            <td>Given Vol.1</td>
+            <td>2</td>
+            <td>236 ฿</td>
+        </tr>
+
+        <tr class="total">
+            <th colspan="2">ราคารวมทั้งหมด</th>
+            <td>1,896 ฿</td>
+        </tr>
+
+    </table>
+        <br>
+
+    <h3>✔ ขอบคุณสำหรับการสั่งซื้อ</h3>
+    <a href="index.html" class="btn-confirm">กลับสู่หน้าหลัก</a>
+
+    </article>
+</section>
+
+<footer id="contact">
+    <h2>CONTACT</h2>
+    <div class="contact-row">
+        <img src="image/index/Instagram_icon.png" class="stack-img" width="100" height="100">
+        <a href="https://www.instagram.com/vii_kak1a/">INSTAGRAM</a>
+    </div>
+        <div class="contact-row">
+        <img src="image/index/facebooklogo.webp" class="stack-img" width="100" height="100">
+        <a href="https://www.facebook.com/kakla.natsuko">FACEBOOK</a>
+    </div>
+    <div class="contact-row">
+        <h4>© 2026 GIVEN SHOP Not official</h4>
+
+    </div>
+</footer>
+
+</body>
+</html>
